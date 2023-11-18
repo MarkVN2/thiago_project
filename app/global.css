@@ -1,0 +1,47 @@
+
+@import-normalize;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*LOGIN PAGE*/
+
+#login-btn{
+    background-color: #1A8D95;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 9999px;
+}
+
+#login-btn > p {
+    color: rgb(255 255 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+}
+#login-btn:hover{
+    scale: 1.1;
+}
+
+
+.nav-btn{
+    margin-top:0.8125rem;
+    background-color: white;
+    width: 14rem;
+    height: 3rem;
+    border-radius: 9999px;
+    box-shadow: 0rem 0.10rem 0.6rem;
+}
+.nav-btn > a {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color:#04686F;
+}
+.nav-btn:hover, .nav-btn:focus{
+    transform: scale(0.96);
+    background-color: #04686F;
+    transition: transform 0.2s ease, top 0.2s ease;
+}
+.nav-btn:hover > a ,.nav-btn:focus > a {
+    color:white;
+}

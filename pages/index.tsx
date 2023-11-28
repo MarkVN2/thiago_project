@@ -42,6 +42,7 @@ const Home = () =>{
                     <span>
                         <input
                         className='m-2 h-[2.5rem] xl:w-[30rem]  md:w-auto text-center'
+                        type='email'
                         placeholder='E-mail'
                         ></input>
                     </span>
@@ -49,6 +50,7 @@ const Home = () =>{
                     <span>
                         <input
                         className='m-2 h-[2.5rem] xl:w-[30rem] md:w-auto text-center'
+                        type='password'
                         placeholder='Senha'
                         ></input>
                     </span>

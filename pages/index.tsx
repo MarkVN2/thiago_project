@@ -2,6 +2,7 @@
 import  Main  from '../app/modules/main'
 import '../app/global.css'
 import Image from 'next/image'
+import Link from 'next/link';
 
 const Home = () =>{
     return(
@@ -63,7 +64,9 @@ const Home = () =>{
                 id='login-btn'
                 > 
                     <p>
+                    <Link href={'/landing'}>
                     ENTRAR
+                    </Link>
                     </p>
                 </button>
             </div>

@@ -16,6 +16,15 @@ const folhaGerada = () => {
             objectPosition='center'
             />
             <TopBar companyname={"Maximus Soluções"} username={"Matheus da Silva Lima"}></TopBar>
+
+            <div className='bg-[#ffffff] xl:w-[45rem] md:w-auto h-fit rounded-xl text-center md:mt-10 md:m-auto xl:m-auto p-4 relative top-[4rem] '>
+                <p>Folha de Pagamento</p>
+            </div>
+
+            <div>
+
+            </div>
+            
         </Main>
     )
 }

@@ -4,6 +4,7 @@ import  Main  from '../../app/modules/main'
 import TopBar from '../../app/modules/topbar';
 import NavCard from '../../app/modules/navcard';
 import Image from 'next/image';
+import Link from 'next/link';
 const folhaPagamento = () => {
     return(
         <Main>
@@ -33,13 +34,18 @@ const folhaPagamento = () => {
                     <input type="month" className='h-8 w-96'></input>
                     </div>
                 </div>
+                <Link href={"/landing"}>
                 <button
                 className='bg-[#75A2A5] nav-btn xl:mr-8 md:mr-5'
-                > 
+                >     
+               
                     <a>
                     CANCELAR
                     </a>
+                  
                 </button>
+                </Link>
+                <Link href={"/services/folha-gerada"}>
                 <button
                 className='nav-btn'
               
@@ -48,6 +54,7 @@ const folhaPagamento = () => {
                     VISUALIZAR FOLHA
                     </a>
                 </button>
+                </Link>
             </div>
             </div>
         </Main>

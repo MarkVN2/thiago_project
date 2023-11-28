@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const NavCard = () => {
 
     return(
@@ -7,7 +9,7 @@ const NavCard = () => {
             <div 
             className="grid grid-flow-row place-content-center">
 
-                <button className="nav-btn shadow-lg"><a>Folha de Pagamento</a></button>
+<Link href={'/services/folha-de-pagamento'}><button className="nav-btn shadow-lg"><a>Folha de Pagamento</a></button></Link>
                 <button className="nav-btn shadow-lg" ><a>Exame Médico</a></button>
                 <button className="nav-btn shadow-lg"><a>Cont. de Trabalho</a></button>
                 <button className="nav-btn shadow-lg"><a>Lista de Funcionários</a></button>

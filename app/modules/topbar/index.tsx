@@ -15,7 +15,7 @@ const TopBar = ({companyname,username}) =>{
                     <div 
                     className="text-center w-32">
                         <span className="text-white font-bold"><h1
-                        className='py-10'
+                        className='py-10 ' 
                     >{companyname}</h1></span>
                     </div>
                 </div>

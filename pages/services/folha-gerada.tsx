@@ -20,10 +20,17 @@ const folhaGerada = () => {
             <div className='grid grid-flow-row content-center'>
                 <div className='bg-[#ffffff] xl:w-[45rem] md:w-auto h-fit rounded-xl text-center md:mt-10 md:m-auto xl:m-auto p-4 top-[4rem] '>
                     <p className='text-[#234A4D] font-bold text-[1.85rem]'>Folha de Pagamento</p>
+                    <div id='document-container' 
+                className=''>
+                    <Image 
+                    src={'/placeholder.jpg'} 
+                    height={900}
+                    width={900}
+                    alt={''}  
+                    ></Image>
                 </div>
-                <div id='document-container'>
-                    
                 </div>
+                
                 <div>
                 <Link href={"/landing"}>
                 <button

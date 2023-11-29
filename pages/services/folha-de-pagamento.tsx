@@ -38,11 +38,9 @@ const folhaPagamento = () => {
                 <button
                 className='bg-[#75A2A5] nav-btn xl:mr-8 md:mr-5'
                 >     
-               
-                    <a>
+                    <p>
                     CANCELAR
-                    </a>
-                  
+                    </p>
                 </button>
                 </Link>
                 <Link href={"/services/folha-gerada"}>
@@ -50,9 +48,9 @@ const folhaPagamento = () => {
                 className='nav-btn'
               
                 > 
-                    <a>
+                    <p>
                     VISUALIZAR FOLHA
-                    </a>
+                    </p>
                 </button>
                 </Link>
             </div>

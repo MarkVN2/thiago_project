@@ -12,8 +12,6 @@ const NavCard = () => {
 <Link href={'/services/folha-de-pagamento'}><button className="nav-btn shadow-lg"><p>Folha de Pagamento</p></button></Link>
                 <button className="nav-btn shadow-lg" ><p>Exame Médico</p></button>
                 <button className="nav-btn shadow-lg"><p>Cont. de Trabalho</p></button>
-                <button className="nav-btn shadow-lg"><p>Lista de Funcionários</p></button>
-
             </div>
 
         </div>

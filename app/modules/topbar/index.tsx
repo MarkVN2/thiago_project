@@ -21,7 +21,7 @@ const TopBar = ({companyname,username}) =>{
                 </div>
 
                 <div
-                className="grid grid-flow-col place-content-end px-32">
+                className="grid grid-flow-col place-content-end xl:px-32">
 
                     <div 
                     className=' place-content-center text-center w-32'>
@@ -30,13 +30,12 @@ const TopBar = ({companyname,username}) =>{
                         >{username}</h1>
                         </span>
                     </div>
-                    <div className='grid grid-flow-row'>
-                    <Image
-                        width={102}
-                        height={105}
+                    <div className='grid grid-flow-row '>
+                    <img
+                        
                         src='/testpic.png'
                         alt='logo'
-                        className='py-5'
+                        className='py-5 '
                         onMouseOver={() => { open? open2(false):open2(true)}}
                         
                         />

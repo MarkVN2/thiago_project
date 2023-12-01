@@ -1,11 +1,29 @@
 "use client";
-import  Main  from '../app/modules/main'
-import '../app/global.css'
+import  Main  from '../src/app/modules/main'
+import '../src/app/global.css'
 import Image from 'next/image'
 import Link from 'next/link';
-
+import axios from 'axios';
+import { useState } from 'react';
+ 
 const Home = () =>{
 
+    const [email,setEmail] = useState("");
+    const [password,setPassword] = useState("");
+
+
+    const [found,setFound] = useState(false);
+    const handleVerifyUser = async () => {
+        try {
+          const response = await axios.post('/api/getUser',{
+            email:email
+          })
+
+          if(response.data.message.password == password) setFound(true);
+          
+        } catch (error) {
+        }
+      };
 
     return(
     <Main>
@@ -35,6 +53,8 @@ const Home = () =>{
                         <input
                         className='m-2 h-[2.5rem] xl:w-[30rem]  md:w-auto text-center'
                         type='email'
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
                         placeholder='E-mail'
                         ></input>
                     </span>
@@ -43,6 +63,8 @@ const Home = () =>{
                         <input
                         className='m-2 h-[2.5rem] xl:w-[30rem] md:w-auto text-center'
                         type='password'
+                        onChange={(e) => setPassword(e.target.value)}
+                        value={password}
                         id="password"
                         placeholder='Senha'
                         ></input>
@@ -50,13 +72,13 @@ const Home = () =>{
                     <p
                     className='text-white text-base pb-5'
                     >
-                   Não possui login, <span className='text-[#64C8D1] font-bold'><a>cadastre-se</a></span> já!
+                   Não possui login, <span className='text-[#64C8D1] font-bold'><Link href={'/signup'}>cadastre-se</Link></span> já!
                     </p>
                 </div>
 
-                <button className='self-end'id='login-btn'> 
+                <button className='self-end'id='login-btn' onClick={handleVerifyUser}> 
                     <p>
-                    <Link href={'/landing'}>
+                    <Link href={found?'/landing':''}>
                     ENTRAR
                     </Link>
                     </p>

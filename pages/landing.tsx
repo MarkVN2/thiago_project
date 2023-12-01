@@ -1,9 +1,9 @@
 "use client";
-import  Main  from '../app/modules/main'
-import TopBar from '../app/modules/topbar'
-import '../app/global.css'
+import  Main  from '../src/app/modules/main'
+import TopBar from '../src/app/modules/topbar'
+import '../src/app/global.css'
 import Image from 'next/image'
-import NavCard from '../app/modules/navcard';
+import NavCard from '../src/app/modules/navcard';
 
 const Landing = () =>{
     return(

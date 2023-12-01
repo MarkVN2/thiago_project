@@ -1,8 +1,8 @@
 "use client";
-import '../../app/global.css'
-import  Main  from '../../app/modules/main'
-import TopBar from '../../app/modules/topbar';
-import NavCard from '../../app/modules/navcard';
+import '../../src/app/global.css';
+import  Main  from '../../src/app/modules/main'
+import TopBar from '../../src/app/modules/topbar';
+import NavCard from '../../src/app/modules/navcard';
 import Image from 'next/image';
 import Link from 'next/link';
 const folhaPagamento = () => {
@@ -26,9 +26,13 @@ const folhaPagamento = () => {
                 <p className='text-white'>Por favor, responda os <span className='font-bold'>campos</span> abaixo para continuarmos : </p>
                 <div>
                     <p className='text-white font-semibold'>*Nome do funcionário: </p>
-                    <input className='h-8 w-96'></input>
+                    <select className='h-8 w-96'>
+                        <option value="Isabella">Isabella Santos Silva</option>
+                    </select>
                     <p className='text-white font-semibold'>*Setor do funcionário: </p>
-                    <input className='h-8 w-96'></input>
+                    <select className='h-8 w-96'>
+                        <option value="TI">TI</option>
+                    </select>
                     <div>
                     <p className='text-white font-semibold self-start'>*Para o mês de: </p>
                     <input type="month" className='h-8 w-96'></input>

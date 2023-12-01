@@ -1,14 +1,17 @@
 "use client";
-import '../../app/global.css'
-import  Main  from '../../app/modules/main'
-import TopBar from '../../app/modules/topbar';
-import NavCard from '../../app/modules/navcard';
+import '../../src/app/global.css'
+import  Main  from '../../src/app/modules/main'
+import TopBar from '../../src/app/modules/topbar';
 import Image from 'next/image';
 import Link from 'next/link';
-import GeneratedDoc from '../../app/modules/generateddoc';
+import GeneratedDoc from '../../src/app/modules/generateddoc';
 const folhaGerada = () => {
-    let titulo_do_document = "Folha de Pagamento";
-    let doc = "/placeholder.jpg";
+
+    const user =  null;
+
+
+    let titulodocument = "Folha de Pagamento";
+    let doc = "/isabella_pagamento.jpg";
 
 
     return(
@@ -23,7 +26,7 @@ const folhaGerada = () => {
             />
             <TopBar companyname={"Maximus Soluções"} username={"Matheus da Silva Lima"}></TopBar>
             <div className='grid grid-flow-row content-center'>
-                <GeneratedDoc title={titulo_do_document} image={doc}></GeneratedDoc>
+                <GeneratedDoc title={titulodocument} image={doc}></GeneratedDoc>
                 <div className='grid grid-flow-col'>
                      <div className=' xl:ml-auto md:ml-auto xl:mr-52 '>
                     <a href={doc}

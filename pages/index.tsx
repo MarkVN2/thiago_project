@@ -13,7 +13,13 @@ const Home = () =>{
 
 
     const [found,setFound] = useState(false);
+    const [empty,setEmpty] = useState(false);
+
     const handleVerifyUser = async () => {
+        if(email == null || email == '' || password == null || password ==  ''){setEmpty(true)}
+        else{
+
+      
         try {
           const response = await axios.post('/api/getUser',{
             email:email
@@ -23,6 +29,8 @@ const Home = () =>{
           
         } catch (error) {
         }
+      }
+
       };
 
     return(
@@ -44,7 +52,7 @@ const Home = () =>{
                 <p className='text-white text-xl py-5 '>
                 Acesse sua conta <span className='text-[#64C8D1] font-bold'>agora mesmo!</span>
                 </p>
-
+                {empty && <p><span className='text-red-300 font-bold'>Algum campo está vazio</span></p>}
             </div>
             <div
             className=' text-center flex-grid  '> 

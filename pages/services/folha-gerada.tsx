@@ -25,6 +25,18 @@ const folhaGerada = () => {
             <div className='grid grid-flow-row content-center'>
                 <GeneratedDoc title={titulo_do_document} image={doc}></GeneratedDoc>
                 <div className='grid grid-flow-col'>
+                     <div className=' xl:ml-auto md:ml-auto xl:mr-52 '>
+                    <a href={doc}
+                    download>
+                        <button
+                        className='bg-[#75A2A5] nav-btn xl:mr-8 md:mr-5 '
+                        >     
+                            <p>
+                            BAIXAR
+                            </p>
+                        </button>
+                    </a>
+                    </div>
                     <div className=' xl:ml-auto md:ml-auto xl:mr-52 '>
                     <Link href={"/services/folha-de-pagamento"}>
                         <button
